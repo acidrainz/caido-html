@@ -1,0 +1,20 @@
+/*----- Containers -----
+-------------------------*/
+
+.container {
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.full-page {
+  min-height: 100vh;
+}
+
+.section-animate-bg {
+  background-attachment: fixed;
+}
+
+h4 {
+  font-size: 20px;
+}
