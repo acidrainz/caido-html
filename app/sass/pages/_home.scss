@@ -3,7 +3,13 @@
   padding-top: 128px;
   background-image: url(../img/home-bg.jpg);
   background-size: cover;
-  background-position: center;
+
+  @media (min-width: 1200px) {
+    background-attachment: fixed;
+  }
+
+  background-repeat: no-repeat;
+  background-position: center top;
 
   .slider-container {
     min-height: 300px;
@@ -19,9 +25,14 @@
       .slider-nav {
         @include centerer(false, true);
 
+        display: none;
         transition: all 0.5s ease;
         height: 48px;
         width: 31px;
+
+        @media (min-width: 1200px) {
+          display: block;
+        }
 
         &:hover {
           opacity: 0.7;
@@ -75,6 +86,7 @@
       font-size: 50px;
       font-family: $futura-medium;
       color: #fff;
+      text-transform: uppercase;
 
       &:hover,
       &:focus {
@@ -99,8 +111,11 @@
   }
 
   .phi-items {
-    min-height: 150px;
     margin-bottom: 30px;
+
+    @media (min-width: 1200px) {
+      min-height: 150px;
+    }
 
     .item-icons {
       position: absolute;
@@ -123,7 +138,11 @@
 
 .section-banner {
   min-height: 315px;
-  background-attachment: fixed;
+
+  @media (min-width: 768px) {
+    background-attachment: fixed;
+  }
+
   background-color: #888;
   background-size: cover;
   background-repeat: no-repeat;
@@ -140,6 +159,8 @@
 
     @include centerer(true, true);
 
+    width: 100%;
+
     a {
       color: #fff;
       font-size: 30px;
@@ -150,5 +171,135 @@
 .our-team {
   .team-banner {
     background-image: url(../img/ourteam-banner.jpg);
+
+    &.advisors {
+      background-image: url(../img/ouradvisors-banner.jpg);
+    }
+  }
+
+  .team-list {
+    padding-top: 50px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+
+      li {
+        margin-bottom: 60px;
+      }
+    }
+
+    .team-picture {
+      width: 190px;
+      height: 190px;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+      margin: 15px auto;
+
+      @media (min-width: 1200px) {
+        position: absolute;
+      }
+
+      img {
+        width: 190px;
+        height: 190px;
+      }
+    }
+
+    .team-info {
+      @media (min-width: 1200px) {
+        padding-left: 230px;
+      }
+
+      h4,
+      h1 {
+        font-family: $futura-medium;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media (min-width: 1200px) {
+          text-align: left;
+        }
+      }
+
+      h1 {
+        color: #444444;
+        font-size: 33px;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 0 0 20px;
+      }
+    }
+  }
+}
+
+.contact-info {
+  padding-top: 50px;
+
+  .map-image {
+    min-height: 400px;
+    background-color: #444;
+    background-image: url('../img/map.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .contact-section {
+    padding-top: 30px;
+
+    .contact-settings {
+      .contact-item {
+        padding-top: 15px;
+
+        .fa-stack-2x {
+          color: $site-red;
+        }
+
+        small {
+          display: block;
+          font-weight: 500;
+        }
+      }
+
+      .contact-icon {
+        position: absolute;
+      }
+
+      .contact-details {
+        padding-left: 45px;
+
+        p,
+        a {
+          margin: 0;
+          color: #555555;
+        }
+      }
+    }
+
+    .contact-subscribe {
+      @media (min-width: 1024px) {
+        margin-left: 30%;
+      }
+
+      padding-top: 15px;
+
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        li {
+          display: inline-block;
+          width: 260px;
+          margin-right: 17px;
+          margin-bottom: 15px;
+        }
+      }
+    }
   }
 }

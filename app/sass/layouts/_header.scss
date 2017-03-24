@@ -10,6 +10,12 @@ header {
       padding: 0;
       margin: 0;
       list-style-type: none;
+      text-align: right;
+      padding: 0 15px;
+
+      @media (min-width: 1200px) {
+        float: right;
+      }
 
       li {
         display: inline-block;
@@ -56,7 +62,34 @@ header {
     }
 
     .navbar-nav {
-      padding-left: 40px;
+      &.main-nav {
+        padding-left: 40px;
+      }
+
+      &.sub-nav {
+        li {
+          margin: 0;
+
+          &:hover {
+            border-bottom: transparent 3px solid;
+            opacity: 0.7;
+          }
+
+          a {
+            padding-top: 25px;
+            padding-bottom: 25px;
+          }
+
+          .fa-stack-2x {
+            font-size: 40px;
+            color: $site-red;
+          }
+
+          .fa-stack-1x {
+            line-height: 40px;
+          }
+        }
+      }
 
       li {
         margin: 0 15px;

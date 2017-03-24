@@ -1,0 +1,15 @@
+footer {
+  min-height: 40px;
+  width: 100%;
+  background-color: $site-red;
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 8px;
+
+  @media (min-width: 1200px) {
+    font-size: 11px;
+  }
+
+  margin-top: 10px;
+  text-align: center;
+}

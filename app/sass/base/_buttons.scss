@@ -1,0 +1,25 @@
+.btn {
+  font-family: $roboto;
+  font-weight: bold;
+  text-align: left;
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 9px 12px;
+  padding-bottom: 7px;
+  transition: all 0.5s ease;
+
+  &:hover {
+    opacity: 0.7;
+    color: #fff;
+  }
+
+  &.btn-subsribe {
+    background-color: $site-red;
+
+    i {
+      float: right;
+      padding-top: 2px;
+    }
+  }
+}
