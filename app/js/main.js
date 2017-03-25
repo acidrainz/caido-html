@@ -16,7 +16,12 @@ $(function() {
     owl.trigger('prev.owl.carousel');
   });
 
+  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+    $(this).toggleClass('open');
 
+
+
+  });
 
   //smoothscroll
   var sections = $('.section'),
