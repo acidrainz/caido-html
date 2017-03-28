@@ -12,4 +12,48 @@ footer {
 
   margin-top: 10px;
   text-align: center;
+
+  .copyright {
+    ul {
+      @media (max-width: 767px) {
+        float: none !important;
+        text-align: center;
+      }
+
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+
+        a {
+          color: #fff;
+          font-family: $roboto;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+/*------- MODALS ------
+-------------------------*/
+.popups {
+  .close {
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    z-index: 1024;
+  }
+
+  .scroll-content {
+    padding: 20px;
+
+    ul {
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
 }
