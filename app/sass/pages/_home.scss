@@ -77,9 +77,11 @@
     text-align: center;
     width: 100%;
 
-    @include centerer(true, false);
+    @media (min-width: 1200px) {
+      @include centerer(true, false);
 
-    bottom: 10px;
+      bottom: 10px;
+    }
 
     h1 {
       font-size: 50px;
@@ -107,8 +109,11 @@
   }
 
   .phi-items {
+    margin-bottom: 30px;
+
     @media (min-width: 1200px) {
       min-height: 150px;
+      margin-bottom: 0;
     }
 
     .item-icons {
