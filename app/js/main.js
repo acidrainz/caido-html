@@ -50,13 +50,22 @@ $(function() {
     });
 
   }
-  $('.navbar a, a.link-to').on('click', function(event) {
+  $('.navbar a').on('click', function(event) {
     event.preventDefault();
     var hash = this.hash;
     $('html, body').animate({
-      scrollTop: $(hash).offset().top - 80
+      scrollTop: $(hash).offset().top - 95
     }, 800, function() {
       window.location.hash = hash;
+    });
+  });
+
+  $('a.link-to').on('click', function(event) {
+    event.preventDefault();
+    var hash = this.hash;
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top - 128
+    }, 800, function() {
     });
   });
 
