@@ -25,6 +25,11 @@ header {
           margin: 0 10px;
         }
 
+        img {
+          top: -1px;
+          position: relative;
+        }
+
         a {
           text-transform: uppercase;
           font-family: $lato;
