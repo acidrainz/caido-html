@@ -8,11 +8,7 @@
 }
 
 .full-page {
-  min-height: 50vh;
-
-  @media (min-width: 1200px) {
-    min-height: 100vh;
-  }
+  min-height: 100vh;
 }
 
 .section-animate-bg {

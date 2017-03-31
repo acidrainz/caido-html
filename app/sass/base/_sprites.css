@@ -27,33 +27,45 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 72px;
   height: 71px;
 }
-.icon-governance {
+.icon-estate {
   background-image: url(../img/sprites.png);
   background-position: -72px -71px;
   width: 72px;
   height: 71px;
 }
-.icon-integrity {
+.icon-governance {
   background-image: url(../img/sprites.png);
   background-position: -144px 0px;
   width: 72px;
   height: 71px;
 }
-.icon-next {
-  background-image: url(../img/sprites.png);
-  background-position: 0px -142px;
-  width: 31px;
-  height: 48px;
-}
-.icon-oppurtune {
+.icon-integrity {
   background-image: url(../img/sprites.png);
   background-position: -144px -71px;
   width: 72px;
   height: 71px;
 }
-.icon-prev {
+.icon-next {
   background-image: url(../img/sprites.png);
-  background-position: -31px -142px;
+  background-position: -144px -142px;
   width: 31px;
   height: 48px;
+}
+.icon-oppurtune {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -142px;
+  width: 72px;
+  height: 71px;
+}
+.icon-prev {
+  background-image: url(../img/sprites.png);
+  background-position: -175px -142px;
+  width: 31px;
+  height: 48px;
+}
+.icon-private {
+  background-image: url(../img/sprites.png);
+  background-position: -72px -142px;
+  width: 72px;
+  height: 71px;
 }
