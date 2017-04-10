@@ -29,6 +29,7 @@ $(function() {
   var sections = $('.section'),
     nav = $('.nav'),
     navHeight = nav.outerHeight();
+    console.log(navHeight);
   if (wWidth >= 1200) {
     $(window).on('scroll', function() {
       var curPos = $(this).scrollTop();
@@ -64,7 +65,7 @@ $(function() {
     event.preventDefault();
     var hash = this.hash;
     $('html, body').animate({
-      scrollTop: $(hash).offset().top - 128
+      scrollTop: $(hash).offset().top - 125
     }, 800, function() {
     });
   });

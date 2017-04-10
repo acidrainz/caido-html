@@ -87,8 +87,9 @@
     min-height: 180px;
     background-color: rgba(154, 2, 1, 0.7);
     width: 100%;
-    margin-top: 50px;
-    position: relative;
+    top: 57%;
+    position: absolute;
+    transform: translateY(-57%);
 
     h1 {
       width: 100%;
@@ -109,40 +110,45 @@
       }
     }
   }
+}
 
-  .page-down {
-    text-align: center;
+.page-down {
+  text-align: center;
+  width: 100%;
+  font-family: $futura-medium;
+
+  @include centerer(true, false);
+
+  bottom: 10px;
+
+  h1 {
+    font-size: 35px;
+
+    @media (min-width: 1200px) {
+      font-size: 50px;
+    }
+
+    color: #fff;
+    text-transform: uppercase;
     width: 100%;
-    font-family: $futura-medium;
 
-    @include centerer(true, false);
-
-    bottom: 10px;
-
-    h1 {
-      font-size: 35px;
-
-      @media (min-width: 1200px) {
-        font-size: 50px;
-      }
-
+    a {
       color: #fff;
-      text-transform: uppercase;
-      width: 100%;
-
-      a {
-        color: #fff;
-        font-size: 30px;
-      }
+      font-size: 30px;
     }
   }
 }
 
 .our-business {
-  padding: 30px 0;
   color: #020101;
 
+  .philosophy-banner {
+    background-image: url(../img/our-business.jpg);
+  }
+
   .section-header {
+    padding-top: 30px;
+
     h1 {
       font-family: $futura-medium;
       text-transform: uppercase;
@@ -164,7 +170,7 @@
       .content-heading {
         color: #444444;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 18px;
       }
 
       p {
@@ -183,11 +189,13 @@
     font-family: $roboto;
     font-size: 15px;
     color: #555;
+    padding-top: 40px;
     padding-bottom: 70px;
   }
 
   .phi-items {
     margin-bottom: 30px;
+    text-align: justify;
 
     @media (min-width: 1200px) {
       min-height: 150px;
@@ -204,6 +212,7 @@
       h4 {
         font-size: 18px;
         font-weight: bold;
+        color: #444444;
       }
 
       p {
@@ -214,6 +223,8 @@
 }
 
 .our-team {
+  padding-bottom: 50px;
+
   .team-banner {
     background-image: url(../img/ourteam-banner.jpg);
 
@@ -223,7 +234,8 @@
   }
 
   .team-list {
-    padding-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     ul {
       padding: 0;
@@ -254,6 +266,8 @@
     }
 
     .team-info {
+      text-align: justify;
+
       @media (min-width: 1200px) {
         padding-left: 230px;
       }
@@ -284,22 +298,59 @@
 }
 
 .contact-info {
-  padding-top: 50px;
+  padding-top: 80px;
+
+  @media (min-width: 1460px) {
+    min-height: 84vh;
+
+    .map-image {
+      min-height: 600px !important;
+    }
+  }
 
   .map-image {
     min-height: 400px;
     background-color: #444;
-    background-image: url('../img/map.jpg');
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   .contact-section {
     padding-top: 30px;
+    padding-bottom: 30px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
 
     .contact-settings {
+      width: 100%;
+      text-align: justify;
+      -ms-text-justify: distribute-all-lines;
+      text-justify: distribute-all-lines;
+
       .contact-item {
         padding-top: 15px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+
+        @media (min-width: 1200px) {
+          width: 20% !important;
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+          width: 50%;
+        }
+
+        float: left;
+
+        a {
+          text-decoration: underline;
+        }
 
         .fa-stack-2x {
           color: $site-red;
@@ -340,7 +391,7 @@
 
         li {
           display: inline-block;
-          width: 260px;
+          width: 240px;
           margin-right: 17px;
           margin-bottom: 15px;
         }

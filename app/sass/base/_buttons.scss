@@ -17,6 +17,10 @@
   &.btn-subsribe {
     background-color: $site-red;
 
+    &.angel-list {
+      background-color: #800000;
+    }
+
     i {
       float: right;
       padding-top: 2px;
