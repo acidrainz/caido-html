@@ -243,7 +243,7 @@
       list-style-type: none;
 
       li {
-        margin-bottom: 60px;
+        margin-bottom: 80px;
       }
     }
 
@@ -298,10 +298,10 @@
 }
 
 .contact-info {
-  padding-top: 80px;
+  padding-top: 100px;
 
-  @media (min-width: 1460px) {
-    min-height: 84vh;
+  @media (min-width: 1560px) {
+    min-height: 90vh;
 
     .map-image {
       min-height: 600px !important;
